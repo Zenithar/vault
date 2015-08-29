@@ -37,6 +37,8 @@ func Backend() *framework.Backend {
 
 		Paths: []*framework.Path{
 			pathRoles(&b),
+			pathGenerateCA(&b),
+			pathSetCA(&b),
 			pathConfigCA(&b),
 			pathConfigCRL(&b),
 			pathIssue(&b),
